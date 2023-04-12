@@ -1,0 +1,67 @@
+VM Arguments: -XX:ThreadPriorityPolicy=1 -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCIProduct -XX:-UnlockExperimentalVMOptions -XX:+UseParallelGC -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCI -Dtruffle.TrustAllTruffleRuntimeProviders=true -Dtruffle.TruffleRuntime=com.oracle.truffle.api.impl.DefaultTruffleRuntime -Dgraalvm.ForcePolyglotInvalid=true -Dgraalvm.locatorDisabled=true -Dsubstratevm.IgnoreGraalVersionCheck=true --add-exports=java.base/com.sun.crypto.provider=ALL-UNNAMED --add-exports=java.base/jdk.internal.access.foreign=ALL-UNNAMED --add-exports=java.base/jdk.internal.event=ALL-UNNAMED --add-exports=java.base/jdk.internal.loader=ALL-UNNAMED --add-exports=java.base/jdk.internal.logger=ALL-UNNAMED --add-exports=java.base/jdk.internal.misc=ALL-UNNAMED --add-exports=java.base/jdk.internal.module=ALL-UNNAMED --add-exports=java.base/jdk.internal.org.objectweb.asm=ALL-UNNAMED --add-exports=java.base/jdk.internal.org.xml.sax.helpers=ALL-UNNAMED --add-exports=java.base/jdk.internal.perf=ALL-UNNAMED --add-exports=java.base/jdk.internal.platform=ALL-UNNAMED --add-exports=java.base/jdk.internal.ref=ALL-UNNAMED --add-exports=java.base/jdk.internal.reflect=ALL-UNNAMED --add-exports=java.base/jdk.internal.util.xml.impl=ALL-UNNAMED --add-exports=java.base/jdk.internal.util.xml=ALL-UNNAMED --add-exports=java.base/sun.invoke.util=ALL-UNNAMED --add-exports=java.base/sun.net=ALL-UNNAMED --add-exports=java.base/sun.nio.ch=ALL-UNNAMED --add-exports=java.base/sun.reflect.annotation=ALL-UNNAMED --add-exports=java.base/sun.reflect.generics.reflectiveObjects=ALL-UNNAMED --add-exports=java.base/sun.reflect.generics.repository=ALL-UNNAMED --add-exports=java.base/sun.reflect.generics.tree=ALL-UNNAMED --add-exports=java.base/sun.security.jca=ALL-UNNAMED --add-exports=java.base/sun.security.provider=ALL-UNNAMED --add-exports=java.base/sun.security.ssl=ALL-UNNAMED --add-exports=java.base/sun.security.util=ALL-UNNAMED --add-exports=java.base/sun.text.spi=ALL-UNNAMED --add-exports=java.base/sun.util.calendar=ALL-UNNAMED --add-exports=java.base/sun.util.locale.provider=ALL-UNNAMED --add-exports=java.base/sun.util.resources=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.xml.crypto/org.jcp.xml.dsig.internal.dom=ALL-UNNAMED --add-exports=jdk.internal.vm.ci/jdk.vm.ci.aarch64=ALL-UNNAMED --add-exports=jdk.internal.vm.ci/jdk.vm.ci.amd64=ALL-UNNAMED --add-exports=jdk.internal.vm.ci/jdk.vm.ci.code.site=ALL-UNNAMED --add-exports=jdk.internal.vm.ci/jdk.vm.ci.code.stack=ALL-UNNAMED --add-exports=jdk.internal.vm.ci/jdk.vm.ci.code=ALL-UNNAMED --add-exports=jdk.internal.vm.ci/jdk.vm.ci.common=ALL-UNNAMED --add-exports=jdk.internal.vm.ci/jdk.vm.ci.hotspot.aarch64=ALL-UNNAMED --add-exports=jdk.internal.vm.ci/jdk.vm.ci.hotspot.amd64=ALL-UNNAMED --add-exports=jdk.internal.vm.ci/jdk.vm.ci.hotspot=ALL-UNNAMED --add-exports=jdk.internal.vm.ci/jdk.vm.ci.meta=ALL-UNNAMED --add-exports=jdk.internal.vm.ci/jdk.vm.ci.runtime=ALL-UNNAMED --add-exports=jdk.internal.vm.ci/jdk.vm.ci.services=ALL-UNNAMED --add-exports=jdk.jfr/jdk.jfr.events=ALL-UNNAMED --add-exports=jdk.jfr/jdk.jfr.internal.consumer=ALL-UNNAMED --add-exports=jdk.jfr/jdk.jfr.internal.handlers=ALL-UNNAMED --add-exports=jdk.jfr/jdk.jfr.internal.jfc=ALL-UNNAMED --add-exports=jdk.jfr/jdk.jfr.internal=ALL-UNNAMED -XX:+UseJVMCINativeLibrary -Xss10m -Xms1g -Djava.awt.headless=true -Dorg.graalvm.version=22.0.0.2 -Dorg.graalvm.config=CE -Dcom.oracle.graalvm.isaot=true -Djava.system.class.loader=com.oracle.svm.hosted.NativeImageSystemClassLoader -Xshare:off -Dtruffle.TruffleRuntime=com.oracle.svm.truffle.api.SubstrateTruffleRuntime -Dgraalvm.ForcePolyglotInvalid=false -Dpolyglot.image-build-time.PreinitializeContexts=ruby -Djdk.internal.lambda.disableEagerInitialization=true -Djdk.internal.lambda.eagerlyInitialize=false -Djava.lang.invoke.InnerClassLambdaMetafactory.initializeLambdas=false -Xmx13743895344 -Dclojure.spec.skip-macros=true -Dclojure.compiler.direct-linking=true -Dgraal.LogFile=noob.log -javaagent:/Users/hoangpq/.sdkman/candidates/java/22.0.0.2.r17-grl/lib/svm/builder/svm.jar --module-path=/Users/hoangpq/.sdkman/candidates/java/22.0.0.2.r17-grl/lib/truffle/truffle-api.jar
+sun.java.command=com.oracle.svm.hosted.NativeImageGeneratorRunner$JDK9Plus --image-args-file=/var/folders/69/r_nh2ysj7sj71dnl2ybgbq1r0000gn/T/native-image5398314387993672619.args
+[thread:1] scope: main
+  [thread:1] scope: main.registerResource
+  ServiceLoaderFeature: registerResource: META-INF/services/java.nio.file.spi.FileSystemProvider
+  [thread:1] scope: main.registerResource
+  ServiceLoaderFeature: registerResource: META-INF/services/org.graalvm.compiler.truffle.runtime.LoopNodeFactory
+  [thread:1] scope: main.registerResource
+  ServiceLoaderFeature: registerResource: META-INF/services/jdk.internal.logger.DefaultLoggerFinder
+  [thread:1] scope: main.registerResource
+  ServiceLoaderFeature: registerResource: META-INF/services/sun.util.resources.LocaleData$CommonResourceBundleProvider
+  [thread:1] scope: main.registerResource
+  ServiceLoaderFeature: registerResource: META-INF/services/org.graalvm.polyglot.impl.AbstractPolyglotImpl
+  [thread:1] scope: main.registerResource
+  ServiceLoaderFeature: registerResource: META-INF/services/sun.util.resources.LocaleData$SupplementaryResourceBundleProvider
+  [thread:1] scope: main.registerResource
+  ServiceLoaderFeature: registerResource: META-INF/services/com.oracle.truffle.api.impl.TruffleLocator
+  [thread:1] scope: main.registerResource
+  ServiceLoaderFeature: registerResource: META-INF/services/com.oracle.truffle.api.TruffleLanguage$Provider
+  [thread:1] scope: main.registerResource
+  ServiceLoaderFeature: registerResource: META-INF/services/com.oracle.truffle.api.library.DefaultExportProvider
+  [thread:1] scope: main.registerResource
+  ServiceLoaderFeature: registerResource: META-INF/services/com.oracle.truffle.llvm.runtime.config.ConfigurationFactory
+  [thread:1] scope: main.registerResource
+  ServiceLoaderFeature: registerResource: META-INF/services/org.graalvm.home.HomeFinder
+  [thread:1] scope: main.registerResource
+  ServiceLoaderFeature: registerResource: META-INF/services/com.oracle.truffle.api.instrumentation.TruffleInstrument$Provider
+  [thread:1] scope: main.registerResource
+  ServiceLoaderFeature: registerResource: META-INF/services/com.oracle.truffle.api.object.LayoutFactory
+  [thread:1] scope: main.registerResource
+  ServiceLoaderFeature: registerResource: META-INF/services/org.graalvm.compiler.serviceprovider.JMXService
+  [thread:1] scope: main.registerResource
+  ServiceLoaderFeature: registerResource: META-INF/services/org.graalvm.compiler.debug.DebugHandlersFactory
+  [thread:1] scope: main.registerResource
+  ServiceLoaderFeature: registerResource: META-INF/services/org.graalvm.compiler.truffle.compiler.phases.inlining.InliningPolicyProvider
+  [thread:1] scope: main.registerResource
+  ServiceLoaderFeature: registerResource: META-INF/services/org.graalvm.compiler.code.DisassemblerProvider
+  [thread:1] scope: main.registerResource
+  ServiceLoaderFeature: registerResource: META-INF/services/org.graalvm.compiler.core.match.MatchStatementSet
+  [thread:1] scope: main.registerResource
+  Resources have been added by ServiceLoaderFeature. Automatic registration can be disabled with -H:-UseServiceLoaderFeature
+  [thread:1] scope: main.registerResource
+  ServiceLoaderFeature: registerResource: META-INF/services/java.net.ContentHandlerFactory
+  [thread:1] scope: main.registerResource
+  ServiceLoaderFeature: registerResource: META-INF/services/java.nio.charset.spi.CharsetProvider
+  [thread:1] scope: main.registerResource
+  Resources have been added by ServiceLoaderFeature. Automatic registration can be disabled with -H:-UseServiceLoaderFeature
+  [thread:1] scope: main.registerResource
+  ServiceLoaderFeature: registerResource: META-INF/services/javax.sound.sampled.spi.AudioFileReader
+  [thread:1] scope: main.registerResource
+  ServiceLoaderFeature: registerResource: META-INF/services/javax.sound.midi.spi.MidiFileReader
+  [thread:1] scope: main.registerResource
+  ServiceLoaderFeature: registerResource: META-INF/services/javax.sound.sampled.spi.MixerProvider
+  [thread:1] scope: main.registerResource
+  ServiceLoaderFeature: registerResource: META-INF/services/javax.sound.sampled.spi.FormatConversionProvider
+  [thread:1] scope: main.registerResource
+  ServiceLoaderFeature: registerResource: META-INF/services/javax.sound.sampled.spi.AudioFileWriter
+  [thread:1] scope: main.registerResource
+  ServiceLoaderFeature: registerResource: META-INF/services/javax.sound.midi.spi.MidiDeviceProvider
+  [thread:1] scope: main.registerResource
+  ServiceLoaderFeature: registerResource: META-INF/services/javax.sound.midi.spi.SoundbankReader
+  [thread:1] scope: main.registerResource
+  ServiceLoaderFeature: registerResource: META-INF/services/javax.sound.midi.spi.MidiFileWriter
+  [thread:1] scope: main.registerResource
+  ServiceLoaderFeature: registerResource: META-INF/services/javax.naming.spi.InitialContextFactory
+  [thread:1] scope: main.registerResource
+  Resources have been added by ServiceLoaderFeature. Automatic registration can be disabled with -H:-UseServiceLoaderFeature

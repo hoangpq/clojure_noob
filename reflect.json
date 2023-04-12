@@ -1,0 +1,6 @@
+[
+  {
+    "name": "java.util.concurrent.Callable",
+    "allPublicMethods": true
+  }
+]
